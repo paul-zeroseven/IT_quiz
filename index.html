@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<audio loop="loop" autoplay="autoplay">  
+	 <source src="sound/PhotoOp.mp3" id = "music" /> 
+</audio>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>QUIZ MAIN index.html</title>
+	
+	<link rel="stylesheet" href="css/bootstrap.min.css"><!-- custom style -->
+	<link rel="stylesheet" href="css/bootstrap.css"><!-- custom style -->
+	<!-- boostrap modal START-->
+	<link href="css/bootstrap.css" rel="stylesheet" />
+	
+	
+	<link href="css/bootstrap-responsive.css" rel="stylesheet" />
+	<link href="css/bootstrap-modal.css" rel="stylesheet" />
+	<!-- boostrap modal END-->
+	
+	
+	
+	<script type="text/javascript" src="js/jq.js"></script><!-- jquery script -->
+	<link rel="stylesheet" href="css/style-custom.css"><!-- custom style -->
+	<script type="text/javascript" src="js/quizArray.js"></script>
+	
+</head>
+<body id = "bdy-main">
+
+	<div id="index_modal_container" class="index_modal_container modal hide fade" data-backdrop="static" tabindex="-1" data-keyboard="false">
+		</div>	
+
+	
+		
+			
+	<div id="splashScreen">	</div>
+	<div class="splashImg"><img class="splashImgLogo" src="img/splashscreen.png" alt="" class="img-thumbnail"/></div>
+	
+		<div class="up" style = "text-align:right">
+				<h3 id="txt-username"></h3>
+				<img src="img/rank.png" alt="" class="img-thumbnail border_less"  id="btn-leaderboard"/>
+				<img src="img/logout.png" alt="" class="img-thumbnail border_less"  id="btn-logout"/>
+				<img src="img/login.png" alt="" class="img-thumbnail border_less btn-login"  id="btn-login"/>
+				<img src="img/about-btn.png" alt="" class="img-thumbnail border_less" id = "btn-about"/>
+		</div>
+		<center>
+		<div class="game-name" style = "margin:10%;"><img src="img/game_name.png" alt="" class="img-thumbnail border_less" /></div>
+		<div class="play-button"><img src="img/start_button.png" alt="" class="img-thumbnail border_less" id = "btn-play"/></div>
+			</center>
+		
+		
+		
+		
+		<!--<input id="btn-register" type="button" value="Register" /><br />-->
+		
+		<!--<button id="test" class="ajax demo btn btn-primary btn-large" data-toggle="modal">View Demo</button>-->
+		
+		<!--<input id="btn-login-logout" type="button" value="LOGIN" /><br />-->
+	</center>
+	
+	
+	
+	
+	
+	<script type="text/javascript" src="js/jq-custom.js"></script><!--custom jq script for for functions and variables-->
+	<!-- boostrap modal JS  START-->
+	<script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/prettify.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap-modalmanager.js"></script>
+    <script src="js/bootstrap-modal.js"></script>
+	<!-- boostrap modal JS  END-->
+	
+	<script type="text/javascript">
+		$(document).ready(function(){
+					
+			splashScreenIntro();//splash screen function --index.html
+			checkIfLogin();//--index.html
+			storeQuizArrayToLocalStorage();//store quizArray to localStorage --index.html
+		
+		});
+		
+	</script>
+	<script id="ajax" type="text/javascript">
+		
+		
+		var $modal = $('#index_modal_container');
+		
+		
+	</script>
+	
+</body>
+</html>
